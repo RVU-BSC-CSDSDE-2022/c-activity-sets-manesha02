@@ -12,7 +12,7 @@ int main(){
 
 int input_n(){
   int x;
-  printf("Enter a number");
+  printf("Enter a number\n");
   scanf("%d", &x);
   return(x);
 }
