@@ -1,19 +1,30 @@
 #include <stdio.h>
-int sum_fucn(int a, int b);
+int input();
+int add(int a, int b);
+void output(int a, int b, int sum);
 
 int main(void){
   int a,b,sum;
-  printf("Enter a number\n");
-  scanf("%d", &a);
-  printf("Enter a number\n");
-  scanf("%d", &b);
-  sum = sum_fucn(a,b);
-  printf("%d", sum);
+  a = input();
+  b = input();
+  sum = add(a,b);
+  printf("The sum of %d and %d is %d",a,b,sum);
   return 0;
 }
 
-int sum_fucn(int a,int b){
+int input(){
+  int x;
+  printf("Enter a number\n");
+  scanf("%d", &x);
+  return(x);
+}
+
+int add(int a, int b){
   int sum;
   sum = a+b;
-  return sum;
+  return(sum);
+}
+
+void output(int a, int b, int sum){
+  printf("The sum of %d and %d is %d",a,b,sum);
 }
