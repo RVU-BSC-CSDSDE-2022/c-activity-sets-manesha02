@@ -18,10 +18,18 @@ int input_n(){
 }
 
 int sum_n_nos(int n){
-  n = (n*(n+1))/2;
-  return(n);
+  int i,sum = 0;
+  for(int i=1;i<=n;i++){
+    sum = sum+i;
+  }
+  return(sum);
 }
 
 void output(int n, int sum){
-  printf("The sum of %d natural number is %d",n,sum);
+  printf("%d",1);
+  int i;
+  for(i = 2;i<=n;i++){
+    printf("+%d", i);
+  }
+  printf(" is %d",sum);
 }

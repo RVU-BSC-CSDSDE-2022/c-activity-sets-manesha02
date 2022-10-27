@@ -8,7 +8,7 @@ int main(void){
   a = input();
   b = input();
   add(a,b, &sum);
-  printf("The sum of %d and %d is %d",a,b,sum);
+  output(a,b,sum);
   return 0;
 }
 

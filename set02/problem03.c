@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 struct camel {
-	float radius, height, length,weight;
+	double radius, height, length,weight;
 };
 
 typedef struct camel Camel;
@@ -20,18 +20,18 @@ int main(){
 Camel input(){
   Camel a;
   printf("Enter radius\n");
-  scanf("%f", a.radius);
+  scanf("%lf", a.radius);
   printf("Enter height\n");
-  scanf("%f", a.height);
+  scanf("%lf", a.height);
   printf("Enter length\n");
-  scanf("%f", a.length);
+  scanf("%lf", a.length);
 }
 
 void find_weight(Camel *c){
-  float s = sqrt(c->height * c->length);
+  double s = sqrt(c->height * c->length);
   c->weight = 3.1415 * c->radius * c->radius * c->radius * s;
 }
 
 void output(Camel c){
-  printf("The weight of the camel with radius: %2.1f, height: %2.1f, length: %2.1f is %2.4f", c.radius,c.height,c.length,c.weight);
+  printf("The weight of the camel with radius: %2.1lf, height: %2.1lf, length: %2.1lf is %2.4lf", c.radius,c.height,c.length,c.weight);
 }

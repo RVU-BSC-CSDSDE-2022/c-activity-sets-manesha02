@@ -18,8 +18,12 @@ double input(){
 }
 
 double square_root(double n){
-  double x;
-  x = sqrt(n);
+  double x = n, y = 1.0;
+  double precision = 0.000001;
+  while((x-y)/x > precision){
+    x = (x+y)/2;
+    y = n/x;
+  }
   return(x);
 }
 

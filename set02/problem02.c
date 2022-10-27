@@ -23,7 +23,7 @@ void input_camel_details(float *radius, float *height, float *length){
 float find_weight(float radius, float height, float length){
   float s = sqrt(height * length);
   float weight = 3.1415 * radius * radius * radius * s;
-  return(weight);\p
+  return(weight);
 }
 
 void output(float radius, float height, float length, float weight){
