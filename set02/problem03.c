@@ -20,11 +20,12 @@ int main(){
 Camel input(){
   Camel a;
   printf("Enter radius\n");
-  scanf("%lf", a.radius);
+  scanf("%lf", &a.radius);
   printf("Enter height\n");
-  scanf("%lf", a.height);
+  scanf("%lf", &a.height);
   printf("Enter length\n");
-  scanf("%lf", a.length);
+  scanf("%lf", &a.length);
+  return(a);
 }
 
 void find_weight(Camel *c){
