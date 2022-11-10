@@ -14,7 +14,7 @@ int main(){
 
 void input(char *name){
   printf("Enter a name for the camel\n");
-  scanf("%s\n", name);
+  scanf("%s", name);
 }
 
 int has_nice_name(char *c){
