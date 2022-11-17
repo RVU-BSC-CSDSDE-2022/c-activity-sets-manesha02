@@ -20,18 +20,16 @@ int input(){
 
 //1 + (x^1)/3! + (x^2)/5! + (x^3)/7! + ...
 float borga_X(int x){
-  float sum=0.0,fact = 1.0,c = 1.0;
-  int i = 1,i1 = 3,a;
+  float sum=0.0,fact = 6.0,c = 1.0;
+  int i = 4;
   while(c>0.000001){
-    for(a = 1;a<=i1;a++){
-      fact = fact*a;
-    }
     sum = sum+c;
-    c = (pow(x,i))/fact;
+    c = x/fact;
+    x = x*x;
+    fact = fact*i*(i+1);
+    i += 2;
+    printf("%f\n",sum);
     printf("%f\n", c);
-    i++;
-    i1 += 2;
-    fact = 1;
   }
   return(sum);
 }

@@ -23,11 +23,11 @@ void input(int n, Camel c[n], float *truck_weight){
   int i;
   for(i = 0;i<n;i++){
     printf("Enter the height of camel no. %d:\n", i+1);
-    scanf("%f", c[i].height);
+    scanf("%f", &c[i].height);
     printf("Enter the length of camel no. %d:\n", i+1);
-    scanf("%f", c[i].length);
+    scanf("%f", &c[i].length);
     printf("Enter the radius of camel no. %d:\n", i+1);
-    scanf("%f", c[i].radius);
+    scanf("%f", &c[i].radius);
   }
   printf("Enter the truck weight\n");
   scanf("%f", truck_weight);
@@ -41,8 +41,8 @@ void find_camel_weight(int n, Camel c[n]){
   int i;
   float sq = 0.0;
   for(i = 0;i<n;i++){
-    sq = sqrt(c[i].height*c[i].length);
-    c[i].weight = (3.14*pow(c[i].radius,3)*sq);
+    sq = pow((c[i].height*c[i].length),0.5);
+    c[i].weight = (3.14*(pow(c[i].radius,3))*sq);
   }
 }
 
