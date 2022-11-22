@@ -21,9 +21,8 @@ void input_two_strings(char *string1, char *string2){
 
 int stringcompare(char *string1, char *string2){
   int i = 0,flag = 0;
-  for(i = 0;string1[i] != '\0' && string1[i]==string2[i]);i++)
-    {}
-    return(string1[i]-string2[i]);
+  for(i = 0;string1[i] != '\0' && string1[i]==string2[i];i++){}
+  return(string1[i]-string2[i]);
 }
 
 void output(char *string1, char *string2, int result){
