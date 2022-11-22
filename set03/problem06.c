@@ -5,5 +5,5 @@ void output(char *a, char *reverse_a);
 
 int main(){
   char a[100];
-  
+  input_string(a);
 }

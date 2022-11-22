@@ -1,4 +1,5 @@
 #include<stdio.h>
+<<<<<<< HEAD
 void input(float *base, float *height);
 void find_area(float base, float height, float *area);
 void output(float base, float height, float area);
@@ -24,3 +25,8 @@ void output(float base, float height,float area){
   find_area(base,height,&area);
   printf("The area of the traingle with base %f and height %f is %f\n",base,height,area);
 }
+=======
+void input(float base, float height);
+void find_area(float base , float height, float *area);
+void output(float base, float height, float area);
+>>>>>>> origin/main
