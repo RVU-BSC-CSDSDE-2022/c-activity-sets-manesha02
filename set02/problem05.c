@@ -22,14 +22,13 @@ int input(){
 float borga_X(int x){
   float sum=0.0,fact = 6.0,c = 1.0;
   int i = 4;
+  int a = x;
   while(c>0.000001){
     sum = sum+c;
     c = x/fact;
-    x = x*x;
+    x = x*a;
     fact = fact*i*(i+1);
     i += 2;
-    printf("%f\n",sum);
-    printf("%f\n", c);
   }
   return(sum);
 }
