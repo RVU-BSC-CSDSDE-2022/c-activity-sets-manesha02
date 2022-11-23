@@ -42,25 +42,27 @@ void input_n_triangles(int n, Triangle t[n]){
 }
 
 void find_area(Triangle *t){
-  t->area = 0.5*t->base*t->altitude;
+  t->area = 0.5 * t->base * t->altitude;
 }
 
 void find_n_areas(int n, Triangle t[n]){
   int i;
   for(i = 0;i<n;i++){
-    find_area(&t[n]);
+    find_area(&t[i]);
   }
 }
 
 Triangle find_smallest_triangle(int n, Triangle t[n]){
   int i;
   Triangle c;
+  float a,a1;
   for(i = 0;i<n-1;i++){
-    if((t[i].area) < (t[i+1].area)){
+    a = t[i].area;
+    a1 = t[i+1].area;
+    if(a < a1){
       c.base = t[i].base;
       c.altitude = t[i].altitude;
       c.base = t[i].area;
-      printf("is the triangle having base %2.2f, height %2.2f and area %2.2f\n",c.base,c.altitude,c.area);
     }
   }
   return(c);
