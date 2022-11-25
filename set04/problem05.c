@@ -20,7 +20,7 @@ int input_array_size(){
   return(a);
 }
 
-void init_array(int n, int a[n]{
+void init_array(int n, int a[n]){
   int i;
   for(i = 0;i<n;i++){
     a[i] = i+2;
