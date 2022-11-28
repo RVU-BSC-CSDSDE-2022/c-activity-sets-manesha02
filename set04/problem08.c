@@ -29,11 +29,23 @@ int main(){
 
 int input_n(){
   int a;
-  printf("Enter the number of sides ina polygon");
+  printf("Enter the number of lines in a polygon");
   scanf("%d", &a);
   return(a);
 }
 
 Line input_line(int n){
-  
+  Line x;
+  printf("Enter the coordinates of point %d (x,y):\n",n+1);
+  scanf("%f %f",&x.p.start_end_x,&x.p.start_end_y);
+  return(x);
 }
+
+void input_n_lines(int n, Line *l){
+  int i;
+  for(i = 0;i<n;i++){
+    printf("")
+    l = input_line(n);
+  }
+}
+
