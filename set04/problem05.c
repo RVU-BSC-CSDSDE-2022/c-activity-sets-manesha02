@@ -1,13 +1,15 @@
 #include<stdio.h>
 int input_array_size();
-void init_array(int n, int a[n];
+void init_array(int n, int a[n]);
 void erotosthenes_sieve(int n, int a[n]);
 void output(int n, int a[n]);
 
-int main(){
+int main()
+{
   int n;
-  n = input_arraay_size();
-  n = n-1;
+  n =input_array_size();
+  n =n-1;
+  int a[n];
   init_array(n,a);
   erotosthenes_sieve(n,a);
   output(n,a);
