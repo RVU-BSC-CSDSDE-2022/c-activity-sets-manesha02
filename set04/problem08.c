@@ -44,8 +44,19 @@ Line input_line(int n){
 void input_n_lines(int n, Line *l){
   int i;
   for(i = 0;i<n;i++){
-    printf("")
+    printf("Enter the coordinates of point %d (x,y):\n",n);
     l = input_line(n);
   }
 }
 
+int input_polygon(Polygon *p){
+  
+}
+
+float find_distance(Point a, Point b)
+
+void find_n_distance(int n, Line *l)
+
+void find_perimeter(Polygon* p)
+
+void output(Polygon p)
